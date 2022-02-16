@@ -1,0 +1,122 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    background: #FFB75E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+:root {
+    --primary-color: #0ea5e9;
+    --stone: #78716c;
+    --background: #d1d5db;
+    --orange: #f97316;
+    --alert-sucess: #84cc16;
+    --alert-failure: #dc2626;
+    --alert-caution: #eab308;
+    --alert-primary: #0ea5e9;
+    --online: #22c55e;
+    --inactive: #facc15;
+    --busy: #dc2626;
+    --away: #9ca3af;
+    --tulip: #7C3AED;
+    --yellow: #fec60f;
+    --strike-through: #ea3201;
+    --jupiter: #ffd89b
+}
+
+.container {
+    margin: 10% 40%;
+}
+
+h3{
+    color: var(--tulip)
+}
+h5{
+    color: var(--tulip)
+}
+a{
+    color: var(--tulip);
+}
+.button{
+    border: none;
+    background: inherit;
+    cursor: pointer;
+}
+
+.actionable-buttons{
+    display: flex;
+}
+
+.btn{
+    border: none;
+    cursor: pointer;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 0.4rem;
+    margin: 2px;
+}
+
+.btn-primary-hit{
+    background: var(--orange);
+}
+
+.btn:hover{
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 0.4rem;
+    margin: 2px;
+    background: none;
+}
+
+.btn-primary-hit:hover{
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    background: #fff;
+}
+
+/* input form */
+form {
+    max-width: 450px;
+}
+form > div {
+    position: relative;
+    margin: 8px 0px;
+}
+
+form > div > label {
+    opacity: 0.7;
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+    color: var(--tulip)
+}
+
+form > div > input[type="text"]:focus + label,
+form > div > input[type="email"]:focus + label,
+form > div > input[type="password"]:focus + label {
+    opacity: 0;
+}
+
+form > input[type="text"]:valid,
+form > input[type="email"]:valid,
+form > input[type="password"]:valid {
+    border: 1px solid var(--alert-sucess);
+}
+
+input[type="email"]:valid{
+    border: 2px solid var(--alert-sucess);
+}
+input[type="password"]:valid {
+    border: 2px solid var(--alert-sucess);
+}
+input:valid + label{
+    opacity: 0;
+}
+form > div > input {
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid #FFB75E;
+}
